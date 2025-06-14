@@ -59,6 +59,21 @@ java C2Server
 
 ---
 
+## 🖥️ Running the Web UI
+
+```bash
+npm install
+npm run dev
+```
+
+- The frontend will start on the default port (usually `http://localhost:3000`).
+- Make sure it is configured to call the backend API at `http://localhost:8080/api/bots` or wherever your C2 server is running.
+
+> Note: You may need to configure proxy settings or CORS headers if accessing from a different origin.
+![Web ui](https://github.com/user-attachments/assets/cbf692b9-0247-40cb-bc8c-e685d8f5a70f)
+
+---
+
 ## 🤖 Bot Communication Protocol
 
 Bots must connect via **TCP port 9000** and send the following **5 lines**, each terminated with a newline (`\n`):
